@@ -29,6 +29,7 @@ endif()
 
 set(CMAKE_AUTOMOC ON)
 
+find_package(Boost REQUIRED COMPONENTS iostreams)
 find_package(cartographer REQUIRED)
 include("${CARTOGRAPHER_CMAKE_DIR}/functions.cmake")
 set(BUILD_SHARED_LIBS OFF)
